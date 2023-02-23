@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
   env: {
     browser: true,
@@ -18,9 +19,9 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    indent: ['error', 'tab'],
-    'linebreak-style': ['error', 'window'],
-    quotes: ['error', 'double'],
-    semi: ['error', 'always']
+    indent: ['off', 'tab'],
+    'linebreak-style': ['off', 'window'],
+    quotes: ['off', 'double'],
+    semi: ['off', 'always']
   }
 };
