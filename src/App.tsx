@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
-  return <div className="app"></div>;
+  const [selectedPage, setSelectedPage] = useState<string>('home');
+  return (
+    <div className="app">
+      <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+    </div>
+  );
 }
 
 export default App;
